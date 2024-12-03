@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --background-color: #fff;
+    --border-color: #ddd;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    font-size: 14px;
+  }
+  
+  .contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+    margin: 20px 0 15px;
+  }
+  
+  .professional-summary p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job-header {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .company {
+    font-weight: bold;
+  }
+  
+  .date-location {
+    font-size: 14px;
+    color: var(--secondary-color);
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .consultancy, .education, .skills {
+    margin-top: 20px;
+  }
+  
+  .degree {
+    margin-bottom: 10px;
+  }
+  
+  .skill-group p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    h3 {
+      font-size: 14px;
+    }
+  
+    .contact-info, .professional-summary p, li, .skill-group p {
+      font-size: 12px;
+    }
+  }
+  
+  @media print {
+    body {
+      font-size: 12pt;
+    }
+  
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+  
+    h2 {
+      font-size: 14pt;
+    }
+  
+    h3 {
+      font-size: 12pt;
+    }
+  
+    .contact-info, .professional-summary p, li, .skill-group p {
+      font-size: 10pt;
+    }
+  
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+  }
+  

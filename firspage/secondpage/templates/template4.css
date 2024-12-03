@@ -1,0 +1,169 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #64748b;
+  --text-color: #333333;
+  --background-color: #f8fafc;
+  --border-color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.25rem;
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.summary {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  background-color: rgba(37, 99, 235, 0.05);
+  padding: 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.section-title {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.job {
+  margin-bottom: 1.5rem;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  align-items: baseline;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.job-header span {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.job-title {
+  font-style: italic;
+  margin: 0 0 0.5rem 0;
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    padding: 0;
+    background-color: white;
+  }
+
+  .contact-info a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .job-header {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+}

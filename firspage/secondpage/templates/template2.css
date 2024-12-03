@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin: 10px 0;
+}
+
+.contact {
+  font-size: 14px;
+}
+
+.contact a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.summary,
+.experience,
+.education,
+.achievements,
+.skills,
+.certification,
+.passions,
+.languages {
+  margin-bottom: 30px;
+}
+
+.job,
+.education-item {
+  margin-bottom: 20px;
+}
+
+.job-header,
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.job-info,
+.edu-info {
+  text-align: right;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.job-title {
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 0 0 10px 0;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.achievements-grid,
+.passions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.achievement,
+.passion {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.achievement-icon,
+.passion-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.achievement h3,
+.passion h3 {
+  color: #3498db;
+  margin-top: 0;
+}
+
+.skills p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cert-item {
+  margin-bottom: 15px;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang-name {
+  font-weight: bold;
+}
+
+.proficiency {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.proficiency-dots {
+  color: #3498db;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+  }
+
+  .job-header,
+  .edu-header {
+    flex-direction: column;
+  }
+
+  .job-info,
+  .edu-info {
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .achievements-grid,
+  .passions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+}

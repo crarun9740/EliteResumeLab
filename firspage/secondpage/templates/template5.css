@@ -1,0 +1,164 @@
+:root {
+    --primary-text: #333;
+    --secondary-text: #666;
+    --background: #fff;
+    --header-bg: #f0f0f0;
+    --border-color: #ddd;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-text);
+    background-color: var(--background);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: var(--header-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  .job-title {
+    font-size: 18px;
+    color: var(--secondary-text);
+  }
+  
+  .contact-info {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 3px;
+  }
+  
+  .contact-info a {
+    color: var(--primary-text);
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .summary {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .main-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .left-column {
+    flex: 2;
+  }
+  
+  .right-column {
+    flex: 1;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .job, .project {
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .company, .date {
+    font-size: 14px;
+    color: var(--secondary-text);
+  }
+  
+  ul {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .core-skills p, .languages p, .award p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .language-level {
+    font-style: italic;
+    color: var(--secondary-text);
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+    }
+  
+    .contact-info {
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+      flex: 1;
+    }
+  }
+  
+  @media print {
+    .container {
+      padding: 0;
+    }
+  
+    .header {
+      background-color: var(--background);
+    }
+  
+    a {
+      text-decoration: none;
+      color: var(--primary-text);
+    }
+  }
+  
